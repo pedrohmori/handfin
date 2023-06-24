@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.aling-center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0px;
+  }
+  
+  ul,
+  li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  button, input {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a::hover {
+    text-decoration: none;
+  }
+
+.logo {
+    height: 80px;
+    padding: 5px;      
+    background-color: #fff;   
+
+}
+
+.logo img {
+    width: 5%;       
+}
+
+.login {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    padding: 3rem;
+    background: #FFF;
+}
+
+.form-login h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input-wrapper {
+    margin-bottom: 1.5rem;
+  }
+
+.form-input {
+    padding: 5px;
+    width: auto;
+}
+
+.form-input:hover, .form-input:focus {
+   outline: none;
+   border-color: green;
+}
+
+.button-login {
+    background: green;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.input-cadastro {
+background-color: green;
+color: white;
+padding: 10px 15px;
+border-radius: 4px;
+text-align: center;
+display: block;
+margin: 0 auto;
+}
+

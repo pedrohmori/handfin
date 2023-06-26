@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/css.css">
+
+    <title>Recebimento</title>
+
+    <style>
+
+      .custom-side-bar{
+        width: 20%;
+        height: 100vh;
+        background-color: #e3e3e3;
+      }
+
+      ul {
+        width: 100%; 
+        padding-bottom: 5px;   
+      }
+
+
+      .main-container{
+        width: 80%;
+        height: 100vh;
+      }
+
+      .div-itens{
+        width: 50%;
+      }
+
+      .img-container{
+        width: 400px;
+      }
+
+      .recebimentos{
+        color: #5DB075;
+      }
+
+      .pagamentos {
+        color: #CE2525;
+      }
+
+
+      /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="d-flex">
+  <div class ="custom-side-bar">     
+    <ul class="list-group">
+      <a class="list-group-item" href="./dashboard.html">Dashboard</a>
+      <a class="list-group-item" href="./recebimento.html">Recebimentos</a>
+      <a class="list-group-item" href="./gasto.html">Gastos</a>
+      <a class="list-group-item" href="./index.html">Sair</a>
+    </ul>
+</div>
+
+<main class="login d-flex flex-column">
+    <div class="toast show mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto recebimentos">Gastos cadastrado com sucesso!</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+
+    <form class="form-login" >
+        <h1 class="h1-login">Adicionar Gasto</h1>
+
+        <div class="input-wrapper d-flex flex-column">
+            <label name="username" >Tipo Gasto:</label>
+            <select class="form-input"  name="username" placeholder="Username">
+                <option value="aluguel">Aluguel</option>
+                <option value="despesa_fixa">Despesa Fixas</option>
+                <option value="outros">Outros</option>
+                <option value="cartao_debito">Cartão Débito</option>
+                <option value="cartao_credito">Cartão Crédito</option>
+            </select>            
+        </div>
+        <div class="input-wrapper">
+            <label name="username">Valor</label>
+            <input type="number" class="form-input input-valor" name="username" placeholder="Digite o valor"/>
+        </div>
+       
+        <a href="./gasto.html" class="input-cadastro aling-center">Cadastrar Gasto</a>
+    </form>
+
+</main>
+
+
+
+</div>
+</body>
+</html>

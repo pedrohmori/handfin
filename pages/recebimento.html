@@ -45,6 +45,19 @@
         color: #CE2525;
       }
 
+
+      /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
     </style>
 </head>
 <body>
@@ -55,11 +68,40 @@
       <a class="list-group-item" href="./dashboard.html">Dashboard</a>
       <a class="list-group-item" href="./recebimento.html">Recebimentos</a>
       <a class="list-group-item" href="./gasto.html">Gastos</a>
-      <a class="list-group-item">Conta</a>
+      <a class="list-group-item" href="./index.html">Sair</a>
     </ul>
 </div>
 
+<main class="login d-flex flex-column">
+    <div class="toast show mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto recebimentos">Recebimento cadastrado com sucesso!</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
 
+    <form class="form-login" >
+        <h1 class="h1-login"> Adicionar Recebimento</h1>
+
+        <div class="input-wrapper d-flex flex-column">
+            <label name="username" >Tipo Recebimento:</label>
+            <select class="form-input"  name="username" placeholder="Username">
+                <option value="salario">Salário</option>
+                <option value="comissao">Comissão</option>
+                <option value="outros_recebimentos">Outros Recebimentos</option>
+                <option value="mesada">Mesada</option>
+                <option value="renda_variavel">Renda Variável</option>
+            </select>            
+        </div>
+        <div class="input-wrapper" >
+            <label name="username">Valor</label>
+            <input type="number" class="form-input input-valor" name="username" placeholder="Digite o valor"/>
+        </div>
+       
+        <a href="./recebimento.html" class="input-cadastro aling-center">Cadastrar Recebimento</a>
+    </form>
+
+</main>
 
 
 

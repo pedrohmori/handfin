@@ -48,7 +48,6 @@ h1, h2, h3, h4, p {
     height: 80px;
     padding: 5px;      
     background-color: #fff;   
-
 }
 
 .logo img {
@@ -107,5 +106,9 @@ border-radius: 4px;
 text-align: center;
 display: block;
 margin: 0 auto;
+}
+
+.input-valor{
+  width: 100%;
 }
 
